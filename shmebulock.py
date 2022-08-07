@@ -26,7 +26,7 @@ async def on_ready():
 # If you don't want to use an emoji, remove the <:EMOJI:ID> placeholder from the responses list.
 @bot.event
 async def on_message(message):
-    matches = ["shmebulock", "schmebulock", "schmebulok", "shmebulok"] # Accounts for some typos
+    matches = ["shmebulock", "schmebulock", "schmebulok", "shmebulok", "BOT'S USER ID"] # Accounts for some typos and for being pinged.
     responses = ["Shmebulock!", "Shmebulock.", "<:EMOJI:ID>", "Shmebulock! <:EMOJI:ID>", "Shmebulock. <:EMOJI:ID>"]
     messagecontent = message.content
     messagecontent = messagecontent.replace(" ", "").lower() # Ignores spaces and capitalization
